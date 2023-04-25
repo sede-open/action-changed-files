@@ -2,7 +2,9 @@ name: SonarQube Scans
 
 on:
   pull_request:
-#  push:
+    branches: [ master ]
+  push:
+    branches: [ master ]
 
 env:
   SONAR_HOST_URL: https://sesvc.shell.com
